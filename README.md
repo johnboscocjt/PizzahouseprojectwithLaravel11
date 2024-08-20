@@ -1,4 +1,5 @@
 ![Homepage](https://github.com/johnboscocjt/PizzahouseprojectwithLaravel11/blob/c3f0552420bd8ecf70d853b0458f585ae2da6b42/projectscreenshots/homepage.png)
+![Orderpage](https://github.com/johnboscocjt/PizzahouseprojectwithLaravel11/blob/4f82da4c9fe7c3608e3a8b5a21307729ea14276f/projectscreenshots/orderpizzapage.png)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
