@@ -1,4 +1,4 @@
-![Image description]()
+![Homepage](https://github.com/johnboscocjt/PizzahouseprojectwithLaravel11/blob/c3f0552420bd8ecf70d853b0458f585ae2da6b42/projectscreenshots/homepage.png)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
