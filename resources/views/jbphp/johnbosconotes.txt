@@ -1,0 +1,62 @@
+<div class="title m-b-md">
+Pizza List
+<p> {{$type}} - {{$base}} - {{$price}} </p>
+
+@if($price > 15)
+    <p>This pizza is expensive</p>
+    @elseif($price < 5)
+    <p>This pizza is cheap</p>
+    @else
+    <p>This pizza is normally priced</p> 
+    
+@endif    
+
+@unless($base == 'cheesy crust')
+<p>You dont have a cheesy crust</p>
+@endunless
+
+@php
+$name = "shaun";
+echo ($name);
+@endphp
+</div>
+</div>   
+....................................................................................................
+
+http://127.0.0.1:8000/pizzas?name=john&age=1 , these are query parameters
+
+....................................................................................................
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class PizzaController extends Controller
+{
+    //function for fetching data
+    public function index(){
+        // get data from a database
+        $pizzas = [
+        ['type' => 'hawaiian', 'base' => 'cheesy crust'],
+        ['type' => 'volcano', 'base' => 'garlic crust'],
+        ['type' => 'veg supreme', 'base' => 'thin & crispy']
+        ];
+  
+        $name = request('name');
+        $age = request('age');
+  
+        return view('pizzas', ['pizzas' => $pizzas]);
+    }
+
+
+    public function show($id){
+       //use the $id variable to query the db(database) for the record
+       return view('details', ['id'=> $id]);   
+    }
+}
+
+........................................................................
+Route::get('/pizzas', [PizzaController::class,'index']);
+use App\Http\Controllers\PizzaController;
